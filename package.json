@@ -7,8 +7,8 @@
     "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com> (https://github.com/MunGell)",
     "license": "MIT",
     "scripts": {
-        "build": "esbuild src/main.ts --bundle --outfile=chrome/content/zotserver/main.js",
-        "watch": "esbuild src/main.ts --bundle --outfile=chrome/content/zotserver/main.js --watch",
+        "build": "esbuild src/main.ts --bundle --outfile=dist/main.js",
+        "watch": "esbuild src/main.ts --bundle --outfile=dist/main.js --watch",
         "lint": "tsc -noEmit && eslint src",
         "test": "npm run lint"
     },

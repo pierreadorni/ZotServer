@@ -6,12 +6,12 @@
             <rdf:Seq>
                 <rdf:li>
                     <rdf:Description>
-                        <em:version>0.1.2</em:version>
+                        <em:version>0.1.3</em:version>
                         <em:targetApplication>
                             <rdf:Description>
                                 <em:id>zotero@chnm.gmu.edu</em:id>
                                 <em:minVersion>5.0.0</em:minVersion>
-                                <em:maxVersion>6.*</em:maxVersion>
+                                <em:maxVersion>8.*</em:maxVersion>
                                 <em:updateLink>https://github.com/MunGell/ZotServer/releases/download/0.1.2/zotserver-0.1.2.xpi</em:updateLink>
                             </rdf:Description>
                         </em:targetApplication>

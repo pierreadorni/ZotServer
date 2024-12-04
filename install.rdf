@@ -5,7 +5,7 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id>zotserver@gazanchyan.com</em:id>
         <em:name>ZotServer</em:name>
-        <em:version>0.1.2</em:version>
+        <em:version>0.1.3</em:version>
         <em:type>2</em:type> <!-- type=extension -->
         <em:multiprocessCompatible>true</em:multiprocessCompatible>
         <em:description>Zotero Local Server for third-party integrations</em:description>
@@ -21,7 +21,7 @@
                 <em:name>Zotero</em:name>
                 <em:homepageURL>http://www.zotero.org</em:homepageURL>
                 <em:minVersion>3.0</em:minVersion>
-                <em:maxVersion>4.0.*</em:maxVersion>
+                <em:maxVersion>8.0.*</em:maxVersion>
             </Description>
         </em:requires>
 
@@ -29,14 +29,14 @@
             <Description>
                 <em:id>zotero@chnm.gmu.edu</em:id>
                 <em:minVersion>5.0.0</em:minVersion>
-                <em:maxVersion>6.0.*</em:maxVersion>
+                <em:maxVersion>8.0.*</em:maxVersion>
             </Description>
         </em:targetApplication>
         <em:targetApplication>
             <Description>
                 <em:id>juris-m@juris-m.github.io</em:id>
                 <em:minVersion>4.999</em:minVersion>
-                <em:maxVersion>6.0.*</em:maxVersion>
+/bin/bash: line 1: q: command not found
             </Description>
         </em:targetApplication>
     </Description>

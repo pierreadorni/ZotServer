@@ -1,21 +1,21 @@
 all: Makefile.in
 
-RELEASE_VERSION:=$(shell grep em:version install.rdf | head -n 1 | sed -e 's/ *<em:version>//' -e 's/<\/em:version>//' | sed 's/ //g')
+RELEASE_VERSION:=$(shell grep \"version\": manifest.json | head -n 1 | sed -e 's/  \"version\": \"//' -e 's/\",//')
 
-Makefile.in: install.rdf
+Makefile.in: manifest.json
 	@echo "all: zotserver-${RELEASE_VERSION}.xpi" > Makefile.in
 
 -include Makefile.in
 
 zotserver.xpi: FORCE_RUN
 	rm -rf $@
-	zip -r $@ chrome chrome.manifest install.rdf -x \*.DS_Store
+	zip -r $@ bootstrap.js dist manifest.json -x \*.DS_Store
 
 zotserver-%.xpi: zotserver.xpi
 	mv $< $@
 	rm -rf Makefile.in
 
-version: install.rdf
+version: manifest.json
 	@echo "${RELEASE_VERSION}"
 
 FORCE_RUN:
